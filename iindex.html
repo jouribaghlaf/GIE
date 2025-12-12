@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>خدمات أخرى — GIE Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <div class="phone">
+    <header class="topbar">
+      <div class="topbar-row">
+        <div class="left-icons">
+          <button class="icon-btn" type="button" aria-label="الإعدادات">⚙️</button>
+          <button class="icon-btn" type="button" aria-label="الإشعارات">🔔</button>
+        </div>
+
+        <div class="brand">
+          <span class="brand-text">Absher</span>
+          <span class="brand-mark">🟩</span>
+        </div>
+      </div>
+
+      <h1 class="page-title">خدمات أخرى</h1>
+    </header>
+
+    <main class="content">
+
+      <!-- Search -->
+      <section class="search-card">
+        <button id="searchBtn" class="search-btn" type="button">بحث</button>
+
+        <input
+          id="searchInput"
+          class="search-input"
+          type="text"
+          placeholder="أبحث عن الخدمة التي تحتاجها"
+          autocomplete="off"
+        />
+      </section>
+
+      <!-- Backend pill -->
+      <div id="backendPill" class="backend-pill down">Backend: Down</div>
+
+      <!-- Error box -->
+      <div id="errorBox" class="error-box hidden"></div>
+
+      <!-- Favorites -->
+      <section class="favorites-wrapper">
+        <h3 class="section-title-light">الخدمات المفضلة</h3>
+        <div id="favoritesGrid" class="grid"></div>
+      </section>
+
+      <!-- Suggested -->
+      <section class="section">
+        <h3 class="section-title">الخدمات المقترحة</h3>
+        <div id="suggestedGrid" class="grid"></div>
+        <div id="hintText" class="hint">اضغطي على أي خدمة للانتقال (محاكاة)</div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Nav -->
+    <nav class="bottom-nav" aria-label="Bottom navigation">
+      <div class="nav-item">🏠<div>الرئيسية</div></div>
+      <div class="nav-item">👤<div>خدماتي</div></div>
+      <div class="nav-item">👨‍👩‍👧‍👦<div>عائلتي</div></div>
+      <div class="nav-item">💼<div>عملي</div></div>
+      <div class="nav-item active">🔲<div>خدمات أخرى</div></div>
+    </nav>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-bg" id="modalBg"></div>
+    <div class="modal-box">
+      <div class="modal-title">الانتقال للخدمة</div>
+      <div id="modalBody" class="modal-body"></div>
+      <div class="modal-actions">
+        <button id="modalClose" class="btn" type="button">إغلاق</button>
+        <button id="modalGo" class="btn primary" type="button">متابعة (محاكاة)</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+  <header class="top-bar">
+    <img src="./assets/absher.png" alt="Absher" class="absher-logo">
+    </div>
+  </header>
+
+</html>
